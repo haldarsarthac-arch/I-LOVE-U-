@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Ananya 💌</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Floating petals background -->
+  <div class="petals-container" id="petals"></div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="subtitle-top">A letter from the heart</p>
+      <h1 class="hero-title">I'm Sorry,<br/><em>Ananya.</em></h1>
+      <div class="scroll-hint">↓ Read this, please</div>
+    </div>
+  </section>
+
+  <!-- Photo Section -->
+  <section class="photo-section">
+    <div class="photo-frame">
+      <img src="photo.jpg.jpeg" alt="Us" class="our-photo" onerror="this.style.display='none'; document.querySelector('.photo-fallback').style.display='flex'"/>
+      <div class="photo-fallback" style="display:none">
+        <span>📸</span>
+        <p>Our Photo Here</p>
+      </div>
+      <div class="photo-label">You & Me 🤍</div>
+    </div>
+  </section>
+
+  <!-- Letter Section -->
+  <section class="letter-section">
+    <div class="envelope-deco">💌</div>
+    <div class="letter-card">
+      <p class="salutation">My dearest Ananya,</p>
+
+      <p>
+        I know I messed up. And I know that saying sorry doesn't erase everything — but I want you to know that I am genuinely, deeply, from-the-bottom-of-my-heart <strong>sorry</strong>.
+      </p>
+
+      <p>
+        I never want to be the reason for your tears. You deserve someone who shows up — fully, consistently, and with everything they have. I haven't always been that person, and that's on me.
+      </p>
+
+      <div class="promise-block">
+        <div class="promise-icon">🤝</div>
+        <p class="promise-text">
+          I <em>promise</em> you — I will <strong>never leave you in your bad times.</strong>
+          Not when it's hard. Not when it hurts. Not when the world feels heavy.
+          I will be right there beside you. Always.
+        </p>
+      </div>
+
+      <p>
+        I will give more efforts. <strong>Much more. And more.</strong> Every single day.
+        You will feel it in the little things and the big ones too.
+        I will choose you, again and again, without hesitation.
+      </p>
+
+      <p>
+        You are the most precious thing in my life, Ananya.
+        I don't take that lightly anymore — and I will spend every day making sure you never doubt how much I love you.
+      </p>
+
+      <p class="closing">
+        All my love, always & forever 💕
+      </p>
+    </div>
+  </section>
+
+  <!-- Decision Section -->
+  <section class="decision-section" id="decision">
+    <h2 class="decision-title">So... what do you say?</h2>
+    <p class="decision-sub">Your answer means the world to me 🌍</p>
+
+    <div class="buttons-wrap">
+      <button class="btn-yes" id="btnYes" onclick="handleYes()">
+        <span class="btn-icon">💖</span> Yes, I Forgive You
+      </button>
+      <button class="btn-no" id="btnNo" onmouseover="shrinkNo()" onclick="runAway()">
+        <span class="btn-icon">💔</span> No
+      </button>
+    </div>
+  </section>
+
+  <!-- Love Burst Overlay -->
+  <div class="love-overlay" id="loveOverlay">
+    <div class="love-content">
+      <div class="love-emoji-rain" id="emojiRain"></div>
+      <h2 class="love-title">She Said Yes!! 🎉</h2>
+      <p class="love-msg">I love you so much, Ananya 💞<br/>I promise to never let you down again.</p>
+      <button class="love-close" onclick="closeLove()">Kiss & Make Up 💋</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
